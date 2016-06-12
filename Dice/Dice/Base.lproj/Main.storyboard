@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZTi-eS-xvT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QK-JM-ncQ">
+                                <rect key="frame" x="134" y="567" width="146" height="82"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="42"/>
+                                <color key="tintColor" red="0.89115674079999996" green="0.77306863589999997" blue="0.0036653090069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Roll"/>
+                                <connections>
+                                    <action selector="Randomizer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yPk-Hz-eIG"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgres" translatesAutoresizingMaskIntoConstraints="NO" id="sGs-FJ-sLj">
+                                <rect key="frame" x="132" y="421" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1-border-1" translatesAutoresizingMaskIntoConstraints="NO" id="xMZ-Vz-Si4">
+                                <rect key="frame" x="132" y="231" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1-border-red" translatesAutoresizingMaskIntoConstraints="NO" id="EEt-ez-Qc1">
+                                <rect key="frame" x="132" y="28" width="150" height="150"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fX5-Du-Epp">
+                                <rect key="frame" x="166" y="637" width="79" height="51"/>
+                                <color key="tintColor" red="0.89115674079999996" green="0.77306863589999997" blue="0.0036653090069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="0.89115674079999996" green="0.77306863589999997" blue="0.0036653090069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.89115674079999996" green="0.77306863589999997" blue="0.0036653090069999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRw-mQ-Cyx">
+                                <rect key="frame" x="170" y="688" width="75" height="48"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                <color key="tintColor" red="0.89115674079999996" green="0.77306863589999997" blue="0.0036653090069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hOe-9M-Xfp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHY-rS-ixc">
+                                <rect key="frame" x="0.0" y="637" width="99" height="99"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZTi-eS-xvT" kind="modal" modalTransitionStyle="coverVertical" id="zXw-ij-UwU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="BlackDice" destination="xMZ-Vz-Si4" id="NNv-uz-Etw"/>
+                        <outlet property="ColorDice" destination="sGs-FJ-sLj" id="S7U-Hb-pGz"/>
+                        <outlet property="Randomizer" destination="2QK-JM-ncQ" id="vUs-4w-qWA"/>
+                        <outlet property="RedDice" destination="EEt-ez-Qc1" id="Yso-gh-PRk"/>
+                        <outlet property="roll" destination="fX5-Du-Epp" id="lqF-NK-HeC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="317"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="whj-4V-UXp">
+            <objects>
+                <viewController id="ZTi-eS-xvT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j1J-nb-c7M"/>
+                        <viewControllerLayoutGuide type="bottom" id="eUu-Ff-hdy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KlO-Oi-jhJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Black-Dice-iPhone-6-Wallpaper-Tumblr" translatesAutoresizingMaskIntoConstraints="NO" id="XkF-ug-2WD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2016-06-10 at 3.40.36 PM" translatesAutoresizingMaskIntoConstraints="NO" id="rkc-CG-zhJ">
+                                <rect key="frame" x="47" y="20" width="320" height="130"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycf-l9-vhJ">
+                                <rect key="frame" x="138" y="158" width="138" height="35"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
+                                <color key="textColor" red="0.89115674083769636" green="0.77306863587783814" blue="0.0036653090072801841" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOd-oh-yUW">
+                                <rect key="frame" x="159" y="362" width="97" height="61"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.89115674079999996" green="0.77306863589999997" blue="0.0036653090069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="coverVertical" id="TNT-dm-zZU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3h8-eM-NMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="631" y="294"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1-border-1" width="150" height="150"/>
+        <image name="1-border-red" width="150" height="150"/>
+        <image name="Black-Dice-iPhone-6-Wallpaper-Tumblr" width="1080" height="1920"/>
+        <image name="Screen Shot 2016-06-10 at 3.40.36 PM" width="286" height="102"/>
+        <image name="imgres" width="120" height="120"/>
+    </resources>
+</document>
